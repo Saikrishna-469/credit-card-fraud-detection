@@ -1,0 +1,2 @@
+n_transactions,n_fraud,n_legit,fraud_rate_pct,one_fraud_in_every_n
+284807,492.0,284315.0,0.1727,578.9

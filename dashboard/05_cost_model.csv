@@ -1,0 +1,4 @@
+model,threshold,fraud_caught_eur,fraud_missed_eur,false_alerts,false_alert_cost_eur,net_benefit_eur,share_of_fraud_value_caught_pct
+Logistic regression,1.0,15950.29,10938.57,85,1275.0,14675.29,59.3
+Random forest,0.243,17232.58,9656.28,24,360.0,16872.58,64.1
+No model (catch nothing),,0.0,26888.86,0,0.0,0.0,0.0

@@ -1,0 +1,5 @@
+hour_band,n_transactions,n_fraud,fraud_rate_pct,fraud_amount
+00–05 (night),23934,124.0,0.518,10816.15
+06–11 (morning),70912,118.0,0.166,14371.84
+12–17 (afternoon),96435,134.0,0.139,19355.18
+18–23 (evening),93526,116.0,0.124,15584.8

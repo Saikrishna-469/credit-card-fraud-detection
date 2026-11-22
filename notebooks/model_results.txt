@@ -1,0 +1,15 @@
+Model results — time-based split, train day 1 / test day 2
+Train: 144,786 rows, 281 fraud; Test: 140,021 rows, 211 fraud
+
+              model  threshold  oof_f1_at_threshold  roc_auc@0.50  avg_precision@0.50  precision@0.50  recall@0.50  f1@0.50  tp@0.50  fp@0.50  fn@0.50  alerts@0.50  roc_auc@tuned  avg_precision@tuned  precision@tuned  recall@tuned  f1@tuned  tp@tuned  fp@tuned  fn@tuned  alerts@tuned
+Logistic regression   0.999758                0.793        0.9426              0.7371           0.037        0.872    0.072      184     4745       27         4929         0.9426               0.7371            0.644         0.730     0.684       154        85        57           239
+      Random forest   0.243333                0.878        0.9572              0.7921           0.932        0.654    0.769      138       10       73          148         0.9572               0.7921            0.872         0.777     0.822       164        24        47           188
+
+Cost model (day 2, false alert = EUR 15 analyst time):
+                   model  threshold  fraud_caught_eur  fraud_missed_eur  false_alerts  false_alert_cost_eur  net_benefit_eur  share_of_fraud_value_caught_pct
+     Logistic regression      1.000          15950.29          10938.57            85                1275.0         14675.29                             59.3
+           Random forest      0.243          17232.58           9656.28            24                 360.0         16872.58                             64.1
+No model (catch nothing)        NaN              0.00          26888.86             0                   0.0             0.00                              0.0
+
+Total fraud value on day 2: EUR 26,888.86
+Baseline 'predict all legit': accuracy 0.9985, recall 0, fraud caught EUR 0.00
